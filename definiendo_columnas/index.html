@@ -8,17 +8,41 @@
     <style>
         body{
             font-family: Arial;
+            overflow-x: hidden;
         }
         .container{
             display: grid;
+            grid-template-columns: none;
+        }
+        .container-1{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .container-2{
+            display: grid;
             grid-template-columns: 25% 50% 25%;
         }
+        .container-3{
+            display: grid;
+            grid-template-columns: 80px auto 1rem;
+        }
+        .container-4{
+            display: grid;
+            grid-template-columns:40px 1fr 2fr;
+        }
         .item{
-            background:lightblue;
             padding: 10px;
             border:1px solid rebeccapurple;
         }
-
+        .item:nth-of-type(1){ background: #05FFB0}
+        .item:nth-of-type(2){ background: #00E7EB}
+        .item:nth-of-type(3){ background: #FF3860}
+        .item:nth-of-type(4){ background: #FFDD57}
+        .item:nth-of-type(5){ background: #FF470F}
+        .item:nth-of-type(6){ background: #B86BFF}
+        .item:nth-of-type(7){ background: rgb(2, 116, 151)}
+        .item:nth-of-type(8){ background: rgb(2, 116, 151)}
+        .item:nth-of-type(9){ background: rgb(2, 116, 151)}
     </style>
 </head>
 <body>
@@ -32,9 +56,55 @@
         <div class="item">contenido #7 </div>
         <div class="item">contenido #8 </div>
         <div class="item">contenido #9 </div>
-        <div class="item">contenido #10 </div>
-        <div class="item">contenido #11 </div>
-        <div class="item">contenido #12 </div>
     </section>
+    <hr>
+    <section class="container-1">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+    </section>
+    <hr>
+    <section class="container-2">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+    </section>
+    <hr>
+    <section class="container-3">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+    </section> 
+    <hr> 
+    <section class="container-4">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+
+    </section>      
 </body>
 </html>
