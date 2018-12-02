@@ -71,7 +71,7 @@
             </div>
         </div>
         <hr>
-        <h3>Ejemplos</h3>
+        <h3>Ejemplos Grid-Columna</h3>
         <div class="row">
             <div class="col-12 col-md-6">
                 <p>
@@ -159,7 +159,95 @@
                 </section>
             </div>
         </div>
-
+        <h3 class="mt-2">Definiendo Filas</h3>
+        <div class="row ">
+            <div class="col-12">
+                <p>Primero definimos <kbd>display:grid</kbd> al contenedor padre.</p>
+                <p class="text-justify">Tú puedes especificar el ancho de la fila utilizando las palabras claves como <kbd>auto</kbd>
+                o el largo como <kbd>10px</kbd>.El número de filas es determinado por el número de valores definidos
+                en la propiedad separados por un espacio.</p>
+            </div>
+        </div>
+        <h3>Ejemplos de filas</h3>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p><kbd>.contenedor-row{</kbd> </p>
+                <p><kbd>display:grid;</kbd> </p>
+                <p><kbd>grid-template-columns:auto auto auto;</kbd> </p>
+                <p><kbd>grid-template-rows: <span class="badge badge-danger">150px auto 4rem</span> ;</kbd> </p>
+                <p><kbd>}</kbd></p>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+                <section class="contenedor-row">
+                    <div class="item">contenido #1 </div>
+                    <div class="item">contenido #2 </div>
+                    <div class="item">contenido #3 </div>
+                    <div class="item">contenido #4 </div>
+                    <div class="item">contenido #5 </div>
+                    <div class="item">contenido #6 </div>
+                    <div class="item">contenido #7 </div>
+                    <div class="item">contenido #8 </div>
+                    <div class="item">contenido #9 </div>
+                </section>
+            </div>
+            <div class="col-12 col-md-6">
+                    <p><kbd>.contenedor-row{</kbd> </p>
+                    <p><kbd>display:grid;</kbd> </p>
+                    <p><kbd>grid-template-columns:25% 50% 25%;</kbd> </p>
+                    <p><kbd>grid-template-rows: <span class="badge badge-danger">20px 1fr 2fr;</span> ;</kbd> </p>
+                    <p><kbd>}</kbd></p>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="contenedor-row-1">
+                        <div class="item">contenido #1 </div>
+                        <div class="item">contenido #2 </div>
+                        <div class="item">contenido #3 </div>
+                        <div class="item">contenido #4 </div>
+                        <div class="item">contenido #5 </div>
+                        <div class="item">contenido #6 </div>
+                        <div class="item">contenido #7 </div>
+                        <div class="item">contenido #8 </div>
+                        <div class="item">contenido #9 </div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>Podemos tambien utilizar la propiedad <kbd>grid-template</kbd> para definir las
+                    filas y columnas a la vez.</p>
+                    <p>
+                        <kbd>grid-template:</kbd> <span class="badge badge-warning"> filas</span> / <span class="badge badge-danger">columnas</span>
+                    </p>
+                    <p>Ejemplo: <kbd>grid-template: 200px 250px 300px / 200px 250px 300px;</kbd></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="contenedor-row-2">
+                        <div class="item">contenido #1 </div>
+                        <div class="item">contenido #2 </div>
+                        <div class="item">contenido #3 </div>
+                        <div class="item">contenido #4 </div>
+                        <div class="item">contenido #5 </div>
+                        <div class="item">contenido #6 </div>
+                        <div class="item">contenido #7 </div>
+                        <div class="item">contenido #8 </div>
+                        <div class="item">contenido #9 </div>      
+                    </section>      
+                </div>
+        </div>  
+        <h3>Grid Explicíto y Grid Implicito</h3>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>El <span class="badge badge-success">Grid Explicíto</span> es el grid que tú defines con las propiedades <kbd> grid-template-rows</kbd>
+                ,<kbd>grid-template-columns</kbd> y <kbd>grid-template-areas</kbd></p>
+                <p>El<span class="badge badge-success">Grid Implícito</span>  aparece cuando existe filas o columnas extras, estas filas o columnas
+                    extras se aplica grid implicíto <kbd>grid-auto-rows</kbd> y <kbd>grid-auto-columns</kbd> que
+                    utiliza el <kbd>size</kbd> en <kbd>auto</kbd>.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/grid-implicito-explicito.png" class="img-fluid" alt="explicito-implicito grid">
+            </div>
+        </div>
     </section>
     <hr>
     <hr>
