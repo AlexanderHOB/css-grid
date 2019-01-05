@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espaciado Gap</title>
+    <style>
+        body{
+            font-family: Arial;
+            overflow-x: hidden;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: none;
+        }
+        .container-1{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows:150px auto 3rem;
+            grid-column-gap:30px;
+            grid-row-gap:50px;
+        }
+        .container-2{
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows:20px 1fr 2fr;
+            margin-right: 10px;
+            /* grid-gap:filas columnas; */
+            grid-gap:14px 24px;
+            overflow-y: scroll;
+        }
+        .container-3{
+            display: grid;
+            grid-template: 400px 200px / 400px 200px auto;
+        }
+        .container-4{
+            display: grid;
+            grid-template: 200px 250px 300px / 200px 250px 300px;
+        }
+        .item{
+            padding: 10px;
+            border:1px solid rebeccapurple;
+        }
+        .item:nth-of-type(1){ background: #05FFB0}
+        .item:nth-of-type(2){ background: #00E7EB}
+        .item:nth-of-type(3){ background: #FF3860}
+        .item:nth-of-type(4){ background: #FFDD57;}
+        .item:nth-of-type(5){ background: #FF470F}
+        .item:nth-of-type(6){ background: #B86BFF}
+        .item:nth-of-type(7){ background: rgb(2, 116, 151)}
+        .item:nth-of-type(8){ background: rgb(2, 116, 151)}
+        .item:nth-of-type(9){ background: rgb(2, 116, 151)}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+    </section>
+    <hr>
+    <section class="container-1">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+    </section>
+    <hr>
+    <section class="container-2">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+    </section>
+    <hr>
+    <section class="container-3">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+    </section> 
+    <hr> 
+    <section class="container-4">
+        <div class="item">contenido #1 </div>
+        <div class="item">contenido #2 </div>
+        <div class="item">contenido #3 </div>
+        <div class="item">contenido #4 </div>
+        <div class="item">contenido #5 </div>
+        <div class="item">contenido #6 </div>
+        <div class="item">contenido #7 </div>
+        <div class="item">contenido #8 </div>
+        <div class="item">contenido #9 </div>
+
+    </section>      
+</body>
+</html>

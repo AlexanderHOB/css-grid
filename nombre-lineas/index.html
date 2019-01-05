@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Areas Grid  </title>
+    <style>
+        body{
+            font-family: Arial;
+            overflow-x: hidden;
+        }
+        .container{
+            display: grid;
+            grid-template:[inicio] 200px [linea2] 200px [final]/ [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+            grid-gap: 3px;
+            height: 100vh;
+
+        }
+        
+        .item{
+            padding: 10px;
+            border:1px solid rebeccapurple;
+            text-align: center;
+            color:#fff;
+        }
+        .item:nth-of-type(1){
+            background: #518ECF;
+            /*grid-column: span 3;
+            grid-row:span 2;*/
+            grid-column: inicio/destacado-end;
+            grid-row:inicio/final;
+           
+        }
+        .item:nth-of-type(2){           
+            background: #EA702B;
+            grid-column: destacado-end/destacado2-end;
+            grid-row:inicio/final;
+        }
+        .item:nth-of-type(3){           
+            background: #EA702B;
+            grid-column: destacado2-end/final;
+        }
+        .item:nth-of-type(4){do;
+            background: #9C9A9C;
+        }
+        .item:nth-of-type(5){
+            background: #66A23F;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item">item #1</div>
+       <div class="item">item #2</div>
+       <div class="item">item #3</div>
+       <div class="item">item #4</div>
+       <div class="item">item #5</div>
+   </div>
+</body>
+</html>

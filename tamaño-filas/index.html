@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Areas Grid  </title>
+    <style>
+        body{
+            font-family: Arial;
+            overflow-x: hidden;
+        }
+        .container{
+            display: grid;
+            grid-template:repeat(2,200px)/repeat(7,1fr);
+            grid-gap: 3px;
+            height: 100vh;
+
+        }
+        
+        .item{
+            padding: 10px;
+            border:1px solid rebeccapurple;
+            text-align: center;
+            color:#fff;
+        }
+        .item:nth-of-type(1){
+            background: #518ECF;
+            grid-column: span 3;
+            grid-row:span 2;
+           
+        }
+        .item:nth-of-type(2){           
+            background: #EA702B;
+            grid-column: span 2;
+            grid-row:span 2;
+        }
+        .item:nth-of-type(3){           
+            background: #EA702B;
+            grid-column: span 2;
+        }
+        .item:nth-of-type(4){do;
+            background: #9C9A9C;
+        }
+        .item:nth-of-type(5){
+            background: #66A23F;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item">item #1</div>
+       <div class="item">item #2</div>
+       <div class="item">item #3</div>
+       <div class="item">item #4</div>
+       <div class="item">item #5</div>
+   </div>
+</body>
+</html>

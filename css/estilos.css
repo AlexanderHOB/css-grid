@@ -4,6 +4,7 @@ html{
 p{
     text-align: justify;
 }
+
 .container{
     display: grid;
     grid-template-columns: none;
@@ -29,19 +30,23 @@ p{
     border:1px solid rebeccapurple;
 }
 .contenedor-row{
+    /* overflow: scroll; */
     display:grid;
     grid-template-columns:auto auto auto;
     grid-template-rows: 150px auto 4rem;
 }
 .contenedor-row-1{
+    overflow: scroll;
     display:grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows:20px 1fr 2fr;
 }
 .contenedor-row-2{
+    
+    width: 100%;
     overflow: scroll;
     display:grid;
-    grid-template: 200px 250px 300px / 200px 250px 300px;
+    grid-template: 200px 250px 300px/ 200% 250% 300%;
 }
 .item:nth-of-type(1){ background: #05FFB0}
 .item:nth-of-type(2){ background: #00E7EB}
